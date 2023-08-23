@@ -119,6 +119,7 @@ def proteins_from_rf(aa_seq):
 
 
 def all_proteins_from_orfs(seq, startReadPos=0, endReadPos=0, ordered=False):
+    """预测蛋白质序列，往往会产生多个可能的氨基酸序列,下游保守性分析,同源序列比对,基于已知基因的预测等方法可以基本预测其AA序列"""
     if endReadPos > startReadPos:
         rfs = gen_reading_frames(seq[startReadPos:endReadPos])
     else:
