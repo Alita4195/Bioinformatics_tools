@@ -22,6 +22,8 @@ class bio_seq:
         """Check the sequence to make sure it is a valid DNA string"""
         return set(NUCLEOTIDE_BASE[self.seq_type]).issuperset(self.seq)
 
+    # python Set issuperset()method
+
     def get_seq_biotype(self):
         """Returns sequence type"""
         return self.seq_type
