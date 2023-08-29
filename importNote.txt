@@ -1,0 +1,36 @@
+相对路径：
+
+my_project/
+├── main_folder/
+│   └── main_script.py
+└── another_folder/
+    ├── module1.py
+
+.. 表示当前文件的父目录。
+
+如果你想从 another_folder 中导入 module1.py，可以使用相对导入 ..
+
+Syntax👇：
+from ..another_folder import module1
+
+Note: 亲测会出现Error,解决方法如下👇
+https://www.datasciencelearner.com/importerror-attempted-relative-import-parent-package/
+
+-------------------------------------------------------------------------------------------------
+
+相对路径方法2：
+import sys
+
+sys.path.append("./dna") #给当前script append 上moduel 路径
+from utilities import read_FASTA #导入模块
+
+
+
+绝对路径：
+import sys
+
+sys.path.append("/home/nina/jupy/notebook/bioinfomatics/dna")
+
+from utilities import read_FASTA
+
+
