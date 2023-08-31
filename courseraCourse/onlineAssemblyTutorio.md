@@ -3,7 +3,7 @@ THIS WORKFLOW USES ILLUMINA AND NANOPORE READS
 running the tool with  *--help* if there is any flag or option that are out of knowledge
 
 1. Qc --fastqc软件
-2. trimming: 去除低质量的reads --fastqc
+2. trimming: 去除低质量的reads, move sequence adapters --fastqc
 3. Assembly --SPAdes:When you run spades.py with the appropriate command-line arguments, it orchestrates the genome assembly process by utilizing various algorithms and modules included within the SPAdes software package.
 #paired-end sequencing data
 github 有option 以及格式
