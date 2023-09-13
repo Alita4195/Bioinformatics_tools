@@ -17,5 +17,17 @@
 
 
 # Genome Reseqencing
-1）bwa软件
-2）samtools进行变异检测
+1）qc
+2）Genome Assembly
+3）bwa软件
+4）samtools进行变异检测
+5）Variant Filtering
+6）Annotation
+#可以去看黑人小哥tutorial on snippy, bcftools and freebayes
+基本流程：
+![Alt text](image-1.png)
+
+# 其他好用工具
+1. blast -Linux command line 见https://www.youtube.com/watch?v=1AzujLnr3RM
+
+2. Artemis 工具使用见 https://www.youtube.com/watch?v=XrE5SK0n8y0
